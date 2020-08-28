@@ -21,7 +21,11 @@ const App = () => {
 
   return (
     <div className="App">
-      <SearchBox searchField={searchField} onChangeSearch={onChangeSearch} />
+      <SearchBox
+        searchField={searchField}
+        onChangeSearch={onChangeSearch}
+        placeholder={"Search monster"}
+      />
       <CardList monsters={filteredMonsters} />
       <p>
         Created by{" "}
