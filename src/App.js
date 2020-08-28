@@ -1,21 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
+import { CardList } from "./components/card-list/card-list.component";
 
 const App = () => {
+  const [monsters, setMonsters] = useState([
+    {
+      id: 1,
+      name: "Frankenstein",
+    },
+    {
+      id: 2,
+      name: "Dracula",
+    },
+    {
+      id: 3,
+      name: "Zombie",
+    },
+  ]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CardList data={monsters}>
+        {monsters.map((monster) => (
+          <h1 key={monster.id}>{monster.name}</h1>
+        ))}
+      </CardList>
     </div>
   );
 };
