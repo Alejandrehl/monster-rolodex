@@ -1,29 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { CardList } from "./components/card-list/card-list.component";
 
 const App = () => {
-  const [monsters, setMonsters] = useState([
-    {
-      id: 1,
-      name: "Frankenstein",
-    },
-    {
-      id: 2,
-      name: "Dracula",
-    },
-    {
-      id: 3,
-      name: "Zombie",
-    },
-  ]);
+  const [monsters, setMonsters] = useState([]);
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then((res) => res.json())
+      .then((users) => setMonsters(users))
+      .catch((err) => console.log(err));
+  }, []);
 
   return (
     <div>
-      <CardList data={monsters}>
-        {monsters.map((monster) => (
-          <h1 key={monster.id}>{monster.name}</h1>
-        ))}
-      </CardList>
+      <CardList monsters={monsters} />
     </div>
   );
 };
