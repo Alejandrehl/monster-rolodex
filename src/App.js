@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { CardList } from "./components/card-list/card-list.component";
 import "./app.styles.css";
+import { SearchBox } from "./components/search-box/search-box.component";
 
 const App = () => {
   const [monsters, setMonsters] = useState([]);
@@ -20,12 +21,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <input
-        type="search"
-        placeholder="Search monster"
-        value={searchField}
-        onChange={onChangeSearch}
-      />
+      <SearchBox />
       <CardList monsters={filteredMonsters} />
       <p>
         Created by{" "}
