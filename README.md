@@ -19,11 +19,11 @@ this.setState(
 );
 ```
 
-### Ciclos de vida
+### [Ciclos de vida](https://reactjs.org/docs/react-component.html)
 
 1. componentDidMount: Es el ciclo de vida que se ejecuta después del constructor al montar un componente.
 2. componentDidUpdate: Es el ciclo de vida que se ejecuta después de mutar un estado o una prop del componente.
-3. componentWillUnmount: Es el ciclo de vida que se ejecuta en el instante previo a desmontar el componente.
+3. componentWillUnmount: Es el ciclo de vida que se ejecuta en el instante previo a retirar el componente del DOM(Document Object Model).
 
 ### Github Pages
 
