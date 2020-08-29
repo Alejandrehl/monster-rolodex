@@ -33,3 +33,5 @@ Es el servicio de Github para publicar páginas web estáticas de manera gratuit
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
 ```
+
+Este proyecto fue creado utilizando [React JS](https://reactjs.org/) y [JSON Placeholder](https://jsonplaceholder.typicode.com/)
