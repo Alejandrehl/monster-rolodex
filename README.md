@@ -19,6 +19,12 @@ this.setState(
 );
 ```
 
+### Ciclos de vida
+
+1. componentDidMount: Es el ciclo de vida que se ejecuta después del constructor al montar un componente.
+2. componentDidUpdate: Es el ciclo de vida que se ejecuta después de mutar un estado o una prop del componente.
+3. componentWillUnmount: Es el ciclo de vida que se ejecuta en el instante previo a desmontar el componente.
+
 ### Github Pages
 
 Es el servicio de Github para publicar páginas web estáticas de manera gratuita.
