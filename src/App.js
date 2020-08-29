@@ -12,7 +12,7 @@ const App = () => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
       .then((users) => setMonsters(users))
-      .catch((err) => console.log(err));
+      .catch((err) => alert(err.message));
   }, []);
 
   const onChangeSearch = (e) => setSearchField(e.target.value);
