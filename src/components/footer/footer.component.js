@@ -10,7 +10,7 @@ export const Footer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Alejandro Hernández
+        Alejandro Exequiel Hernández Lara
       </a>
       {" - "}
       <a
