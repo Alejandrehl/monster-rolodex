@@ -4,3 +4,8 @@
   align-items: center;
   justify-content: center;
 }
+
+h1 {
+  font-family: "Bigelow Rules";
+  font-size: 72px;
+}
