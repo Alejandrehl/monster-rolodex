@@ -1,8 +1,9 @@
 import React from "react";
+import "./footer.styles.css";
 
 export const Footer = () => {
   return (
-    <p>
+    <p className="footer-text">
       Created by{" "}
       <a
         href="https://www.linkedin.com/in/alejandrrhernandez/"
