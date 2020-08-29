@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { CardList } from "./components/card-list/card-list.component";
 import "./app.styles.css";
 import { SearchBox } from "./components/search-box/search-box.component";
+import { Footer } from "./components/footer/footer.component";
 
 const App = () => {
   const [monsters, setMonsters] = useState([]);
@@ -28,24 +29,7 @@ const App = () => {
         placeholder={"Search monster"}
       />
       <CardList monsters={filteredMonsters} />
-      <p>
-        Created by{" "}
-        <a
-          href="https://www.linkedin.com/in/alejandrrhernandez/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Alejandro Hernández
-        </a>
-        {" - "}
-        <a
-          href="https://github.com/Alejandrehl/monster-rolodex"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Github Repository
-        </a>
-      </p>
+      <Footer />
     </div>
   );
 };
