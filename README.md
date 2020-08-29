@@ -8,6 +8,17 @@
 this.setState({ searchField: e.target.value }, () => console.log(this.state));
 ```
 
+- `this.setState` se puede trabajar de manera asincrona, recibiendo un estado y props previas.
+
+```javascript
+this.setState(
+  (prevState, prevProps) => {
+    return { counter: prevState.counter + 1 };
+  },
+  () => console.log(this.state.counter)
+);
+```
+
 ### Github Pages
 
 Es el servicio de Github para publicar páginas web estáticas de manera gratuita.
