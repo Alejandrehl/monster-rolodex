@@ -22,3 +22,5 @@ Es el servicio de Github para publicar páginas web estáticas de manera gratuit
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
 ```
+
+4. Debes ejecutar en la terminal el comando `yarn deploy`. Esto va a crear una carpeta build en nuestro proyecto.
